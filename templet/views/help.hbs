@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="icon" href="/img/we.png">
+        <title>Help</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/app.js"></script>
+    </head>
+    <body>
+        {{!-- here we are rendering the partials --}}
+
+        <div class="main-index">
+            {{>header}}
+            <h2> {{helpText}} </h2>
+            {{!-- <h1>{{title}}</h1> --}}
+            <p>**Only Proper City/Town Names are Acceptable.</p>
+            <p>**Local addresses are not acceptable.</p>
+        </div>
+        
+
+        {{>footer}}
+
+    </body>
+</html>

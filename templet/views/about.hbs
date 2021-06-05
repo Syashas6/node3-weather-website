@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        <link rel="icon" href="/img/we.png">
+        <title>About</title>
+        <!-- NOTE : always give relative path esspecially in node Js -->
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="/js/app.js"></script>
+    </head>
+    <body>
+         {{!-- here we are rendering the partials --}}
+
+        <div class="main-index">
+            {{>header}}
+            <h1>{{title}}</h1>
+            <img class="potrait" src="/img/yashas.png" alt="">
+            <p>Created by {{name}} </p>
+        </div>
+        
+        
+        {{>footer}}
+    </body>
+</html>

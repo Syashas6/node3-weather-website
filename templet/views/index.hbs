@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="icon" href="/img/we.png">
+        <title>Home</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        
+    </head>
+    <body>
+         {{!-- here we are rendering the partials --}}
+         <div class="main-index">
+             {{>header}} 
+             <p>Use This Site To Get Weather Forecast</p>
+             
+             <form action="">
+                 <input type="text" placeholder="Location">
+                 <button>Search</button>
+                <p class="loc"></p>
+                <p id="temp"></p>
+                <p id="we"></p>
+             </form>
+             
+         </div>
+              
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>

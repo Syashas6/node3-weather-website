@@ -14,7 +14,8 @@ const forecast = function(lati,longi,callback){
         else {
             callback(undefined,{
                 temp : response.body.current.temperature,
-                we : response.body.current.weather_descriptions[0]
+                we : response.body.current.weather_descriptions[0],
+                hu : response.body.current.humidity
             })
         }
 

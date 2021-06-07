@@ -80,10 +80,11 @@ app.get('/weather',(req,res) => {
                         })
                     }
                     else{
-                        const {temp, we} = data;
+                        const {temp, we, hu} = data;
                         res.send({
                             temp : "Current Temperature is "+ temp,
-                            we: "Current Weather is "+ we
+                            we: "Current Weather is "+ we,
+                            hu: "Current Humidity is "+hu
                         });
                     
                     }

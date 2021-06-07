@@ -5,7 +5,7 @@ const forecast = require('./utils/forecast');
 const geocode = require('./utils/geocode');
 
 const app = express();
-
+const port = process.env.PORT || 3000
 
 // This is the path where '.hbs' partials file are present
 const partialsPath = path.join(__dirname, "../templet/partials")
@@ -110,8 +110,8 @@ app.get('*',(req,res) => {
     })
 })
 
-app.listen(3000, function(){
-    console.log("server is up at port 3000");
+app.listen(port, function(){
+    console.log("server is up at port "+port);
 });
 
 
